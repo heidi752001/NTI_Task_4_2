@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cal">
+        <div class="result">
+            <input type="text" placeholder="0.0" id="res">
+        </div>
+        <div class="row">
+            <span class="sp1"><br>OFF</span>
+            <span class="sp"><br>MRC</span>
+            <span class="sp"><br>M-</span>
+            <span class="sp"><br>M+</span>
+            <span class="sp"><br>+/-</span>
+        </div>
+        <div class="row">
+            <span class="sp1" onclick="dis('^')"><br>^</span>
+            <span class="sp" onclick="dis(7)"><br>7</span>
+            <span class="sp" onclick="dis(8)"><br>8</span>
+            <span class="sp" onclick="dis(9)"><br>9</span>
+            <span class="sp"><br>/</span>
+        </div>
+        <div class="row">
+            <span class="sp1"><br>%</span>
+            <span class="sp"><br>4</span>
+            <span class="sp"><br>5</span>
+            <span class="sp"><br>6</span>
+            <span class="sp"><br>*</span>
+        </div>
+        <div class="row">
+            <span class="sp1"><br>CE</span>
+            <span class="sp"><br>1</span>
+            <span class="sp"><br>2</span>
+            <span class="sp"><br>3</span>
+            <span class="sp"><br>-</span>
+        </div>
+        <div class="row" id="sp2">
+            <span class="sp1"><br>ON</span>
+            <span class="sp"><br>0</span>
+            <span class="sp"><br>.</span>
+            <span class="sp"><br>=</span>
+            <span class="sp" onclick="res()"><br>+</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
